@@ -3,7 +3,7 @@
   :license {:name "MIT" :url "https://opensource.org/licenses/MIT"}
   :min-lein-version "2.7.0"
 
-  :dependencies [[org.clojure/clojure "1.9.0"]
+  :dependencies [[org.clojure/clojure "1.10.0-RC5"]
                  [thheller/shadow-cljs "2.7.3"]
                  [fulcrologic/fulcro "2.6.15"]
                  [com.wsscode/pathom "2.2.0-RC3"]
@@ -52,7 +52,8 @@
              :dev        {:source-paths ["src/dev" "src/main" "src/workspaces"]
                           :jvm-opts     ["-XX:-OmitStackTraceInFastThrow" "-Xmx1g"]
 
-                          :plugins      [[com.jakemccrary/lein-test-refresh "0.23.0"]]
+                          :plugins      [[com.jakemccrary/lein-test-refresh "0.23.0"]
+                                         [cider/cider-nrepl "0.19.0-SNAPSHOT"]]
 
                           :dependencies [[org.clojure/tools.namespace "0.3.0-alpha4"]
                                          [org.clojure/tools.nrepl "0.2.13"]
